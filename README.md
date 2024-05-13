@@ -19,7 +19,7 @@ There are some code which I commented out, you can enable them by uncommenting A
 ### Event Subscription and Motion Cells
 Includes commented out code (Because I wasn't sure at the time if it was the best solution) for event subscription and setting the Motion Cells variable. Also includes functions to decode and encode Pack Bits which is needed for Motion Cells.
 
-#### Motion Cells: This is the area in which motion detection is run. ONVIF compliant cameras store this area as a base64 encoded string, which when decoded, translates into a Pack Bits encoded string. Long story short, Pack Bits is the algorithm that is used to shorten that 17 x 21 character string (Because that's how many rectangles the motion area has).    
+**Motion Cells:** This is the area in which motion detection is run. ONVIF compliant cameras store this area as a base64 encoded string, which when decoded, translates into a Pack Bits encoded string. Long story short, Pack Bits is the algorithm that is used to shorten that 17 x 21 character string (Because that's how many rectangles the motion area has).    
 
 After you decode that string too, you get the 0's and 1's that represent each rectangle (Which you can see in your camera's web interface) and you can manipulate those to change the area. 
 
